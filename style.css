@@ -1,0 +1,13 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#headshot{
+    height: 50vh;
+    width: 35em;
+    object-fit: cover;
+    object-position: top;
+}
