@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 
 *{
     padding: 0px;
@@ -5,9 +6,116 @@
     box-sizing: border-box;
 }
 
-#headshot{
-    height: 50vh;
-    width: 35em;
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--color-background);
+}
+
+h1, h2, h3, p, a, li, button{
+    color: var(--color-text);
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+:root {
+  --color-text: #fefae0; 
+  --color-background: #283618;
+  --color-light-green: #606c38;
+  --color-orange: #bc6c25;
+}
+
+
+
+
+/* --------------IMAGE HEADSHOT WORK IN PROGRESS----------------------- */
+
+
+#image-wrapper{
+  position: relative;
+  width: 250px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: solid var(--color-orange), 12px;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+}
+
+#image-wrapper img {
+    width: 120%;
+    top: 85%;
+    left: 50%;
+    height: auto;               
+    transform: translate(-50%, -50%);
     object-fit: cover;
     object-position: top;
+    
+    transition: all 0.5s ease;
+}
+
+#image-wrapper:hover {
+   transform: scale(1.1);
+}
+
+.headshot{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease;
+}
+
+.headshot.hover{
+    opacity: 0;
+    z-index: 2;
+}
+
+#image-wrapper:hover .headshot.hover{
+    opacity: 1;
+}
+
+#image-wrapper:hover .headshot:default{
+    opacity: 0;
+}
+
+
+/* ------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button{
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border: solid, 1px;
+}
+
+.button:hover{
+    background-color: var(--color-text);
+    color: var(--color-background);
+}
+
+#social-links{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 1.5em;
+    padding-top: 3rem;
 }
