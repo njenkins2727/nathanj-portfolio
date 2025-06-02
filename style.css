@@ -17,6 +17,8 @@ body{
 h1, h2, h3, p, a, li, button{
     color: var(--color-text);
     font-family: "Bricolage Grotesque", sans-serif;
+    text-decoration: none;
+    list-style: none;
 }
 
 :root {
@@ -24,13 +26,6 @@ h1, h2, h3, p, a, li, button{
   --color-background: #283618;
   --color-light-green: #606c38;
   --color-orange: #bc6c25;
-}
-
-/* Nav */
-.hamburger-button{
-    display: flex;
-    margin-left: auto;
-    width: clamp(4rem, 20%, 5rem);
 }
 
 .close-button{
@@ -103,13 +98,64 @@ h1, h2, h3, p, a, li, button{
 
 /* small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
+    /* On small screen hide item */
     .small-hide{
         display: none;
+    }
+
+    /* Navbar */
+    #navbar{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: clamp(5rem, 50%, 15rem);
+        z-index: 1;
+        background-color: var(--color-light-green);
+        transition: right 0.4s ease-out;
+    }
+
+    .navbar-show{
+        right: 0 !important;
+    }
+
+    .nav-links{
+        width: 100%;
+        flex-direction: column;
+        font-size: 1.5rem;
+        line-height: 4rem;
+    }
+
+    .nav-link-item{
+        display: block;
+        padding-left: 2rem;
+    }
+    .nav-link-item:hover:active{
+        background-color: var(--color-orange);
+    }
+
+    #close-navbar{
+        padding: 1rem;
+        cursor: pointer;
+    }
+
+    #open-navbar{
+        background: none;
+        border: none;
+        display: block;
+        margin-left: auto;
+        padding: 1rem;
+        cursor: pointer;
+    }
+    
+    .hamburger-icon{
+        width: 4rem;
     }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+    /* On large screen hide item */
     .large-hide{
         display: none;
     }

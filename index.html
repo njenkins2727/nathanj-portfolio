@@ -6,15 +6,25 @@
     <title>Nathan Jenkins Portfolio</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
 <div id="body-container">
 
 <!-- Nav -->
-    <nav class="large-hide">
-        <img src="./images/buttons/hamburger-button.svg" alt="hamburger button" class="hamburger-button">
-        <img src="/images/buttons/close-button.svg" alt="close button" class="close-button">
-    </nav>
+<button id="open-navbar" class="large-hide" onclick="openSidebar()">
+    <img src="./images/buttons/hamburger-button.svg" alt="hamburger button" class="hamburger-icon">
+</button>
+
+<nav id="navbar" class="large-hide">
+    <img src="/images/buttons/close-button.svg" alt="close button" id="close-navbar" onclick="closeSidebar()">
+    <ul class="nav-links">
+        <li><a href="#" class="nav-link-item">About</a></li>
+        <li><a href="#" class="nav-link-item">Resume</a></li>
+        <li><a href="#" class="nav-link-item">Portfolio</a></li>
+        <li><a href="#" class="nav-link-item">Contact</a></li>
+    </ul>
+</nav>
     
 <!-- Headshot -->
     <div id="image-wrapper">
@@ -83,6 +93,5 @@
     </div>
     
 </div>
-<script src="./script.js"></script>
 </body>
 </html>
