@@ -21,6 +21,11 @@ h1, h2, h3, p, a, li, button{
     list-style: none;
 }
 
+h2{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
 :root {
   --color-text: #fefae0; 
   --color-background: #283618;
@@ -35,7 +40,9 @@ h1, h2, h3, p, a, li, button{
 /* Image Headshot */
 #image-wrapper{
   position: relative;
-  width: 250px;
+  /* max-width: 80vw; */
+  /* max-width: 18rem; */
+  max-width: clamp(18rem, 80vw, 30rem);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   border: solid var(--color-orange), 12px;
@@ -43,7 +50,7 @@ h1, h2, h3, p, a, li, button{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
+  margin-top: 5rem;
   transition: transform 0.4s ease;
 }
 
@@ -84,12 +91,43 @@ h1, h2, h3, p, a, li, button{
     outline: none;
     cursor: pointer;
     border: solid, 1px;
+    font-size: 2rem;
+    padding: 10px;
 }
 
 .button:hover{
     background-color: var(--color-text);
     color: var(--color-background);
 }
+
+/* Title */
+ #title-wrapper{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    padding-top: 3rem;
+    flex-direction: column;
+    height: 50vh;
+    position: relative;
+}  
+
+.title-name{    
+    font-size: clamp(2.5rem, 13vw, 6rem);
+    font-weight: 600;
+}
+
+.title-subheading{
+    font-size: clamp(1.5rem, 7vw, 20rem);
+    padding-top: 0.5rem;
+    font-weight: 200;
+}
+
+
+.social-links-title{
+    
+    padding-top: 2rem;
+}
+
 /* Links */
 .social-links{
     display: flex;
@@ -144,13 +182,33 @@ h1, h2, h3, p, a, li, button{
         border: none;
         display: block;
         margin-left: auto;
-        padding: 1rem;
+        padding-right: 0.5rem;
         cursor: pointer;
     }
     
     .hamburger-icon{
         width: 4rem;
     }
+}
+
+/* About */
+#about-wrapper{
+     min-height: 100vh;
+    margin: 0 3rem 3rem 3rem;
+}
+
+.about-paragraph{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 1.25rem, 2rem); 
+
+}
+
+/* Portfolio */
+
+#portfolio-wrapper{
+    min-height: 100vh;
+    margin: 0 3rem 0 3rem
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
