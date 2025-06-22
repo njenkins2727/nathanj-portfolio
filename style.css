@@ -14,7 +14,7 @@ body{
     background-color: var(--color-background);
 }
 
-h1, h2, h3, p, a, li, button{
+h1, h2, h3, h4, h5, h6, p, a, li, button{
     color: var(--color-text);
     font-family: "Bricolage Grotesque", sans-serif;
     text-decoration: none;
@@ -93,6 +93,7 @@ h2{
     border: solid, 1px;
     font-size: 2rem;
     padding: 10px;
+    margin-top: 1rem;
 }
 
 .button:hover{
@@ -134,14 +135,103 @@ h2{
     gap: 1.5em;
 }
 
+
+/* About */
+#about-wrapper{
+    height: auto;
+    margin: 0 3rem 5rem 3rem;
+}
+
+.about-paragraph{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: clamp(1rem, 1.25rem, 2rem); 
+}
+
+/* Portfolio */
+
+#portfolio-wrapper{
+    min-height: 100vh;
+    margin: 0 3rem 0 3rem
+}
+
+.portfolio-img{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+/* Card */
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 0 2rem 0;
+}
+
+.card-info{
+    margin: 2rem 0 2rem 0;
+    line-height: 1.5rem;
+}
+
+.card-date{
+    margin-bottom: 5px;
+}
+
+/* Contact */
+
+#contact-wrapper{
+    min-height: 100vh;
+    width: 80vw;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-left: 3rem; */    
+}
+
+.contact-title{
+    font-size: 3rem;
+}
+
+.contact-subheading{
+    margin: 1.5rem 0 1.5rem 0;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.contact-info{
+    margin-top: 3rem;
+    line-height: 3rem;
+}
+
+
 /* small devices (phones, 600px and down) */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 600px) {
+    #contact-wrapper{
+        margin-left: 10%;
+        font-size: 2rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) {
+    /* On large screen hide item */
+    .large-hide{
+        display: none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
     /* On small screen hide item */
     .small-hide{
         display: none;
     }
 
-    /* Navbar */
+/* Navbar */
     #navbar{
         position: fixed;
         top: 0;
@@ -189,39 +279,6 @@ h2{
     .hamburger-icon{
         width: 4rem;
     }
-}
-
-/* About */
-#about-wrapper{
-     min-height: 100vh;
-    margin: 0 3rem 3rem 3rem;
-}
-
-.about-paragraph{
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    font-size: clamp(1rem, 1.25rem, 2rem); 
-
-}
-
-/* Portfolio */
-
-#portfolio-wrapper{
-    min-height: 100vh;
-    margin: 0 3rem 0 3rem
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    /* On large screen hide item */
-    .large-hide{
-        display: none;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
-<body>
-<div id="body-container">
+<body id="body-container">
+
 
 <!-- Nav -->
 <button id="open-navbar" class="large-hide" onclick="openSidebar()">
@@ -27,13 +27,13 @@
 </nav>
     
 <!-- Headshot -->
-    <div id="image-wrapper">
+    <section id="image-wrapper">
         <img src="./images/headshots/headshot-default.png" alt="Professional photo headshot" class="headshot base">
         <img src="./images/headshots/headshot-hover.jpg" alt="Professional photo headshot" class="headshot hover">
-    </div>
+    </section>
     
 <!-- Title -->
-    <div id="title-wrapper"> 
+    <section id="title-wrapper"> 
         <h1 class="title-name">Nathan Jenkins</h1>
         <h3 class="title-subheading">Full-stack Web Developer</h3>
         <button class="button small-hide">Contact</button>
@@ -42,16 +42,13 @@
             <a href="https://github.com/njenkins2727"><img src="./images/icons/github-icon.png" alt="Instagram logo" class="social-media-icons"></a>
             <a href="https://www.linkedin.com/in/nathan-jenkins-17798b236/"><img src="./images/icons/linkedin-icon.png" alt="Instagram logo" class="social-media-icons"></a>
         </div>
-    </div>
+    </section>
 
 <!-- About -->
-    <div id="about-wrapper">
+    <section id="about-wrapper">
         <h2>About Me <hr></h2>
-        
         <p class="about-paragraph">I'm a passionate developer with 1.5 years of hands-on coding experience, eager to grow in the tech industry. I have a strong willingness to learn and thrive on solving problems and taking on new challenges. <br><br>
-
         I'm familiar with front-end technologies like HTML, CSS, JavaScript, and modern frameworks such as React, Vue, and Next.js. My projects have allowed me to work with technologies like Google OAuth and webhooks. On the back end, I've gained experience building APIs, working with databases, and creating structured backend models. <br><br>
-
         Outside of coding, I enjoy bouldering, boxing, music, and food! These activities keep me curious, focused, and energized both in and out of the tech space.</p>
         <div id="about-button">
             <button class="button">Resume</button>
@@ -62,34 +59,59 @@
             <a href="https://github.com/njenkins2727"><img src="./images/icons/github-icon.png" alt="Instagram logo" class="social-media-icons"></a>
             <a href="https://www.linkedin.com/in/nathan-jenkins-17798b236/"><img src="./images/icons/linkedin-icon.png" alt="Instagram logo" class="social-media-icons"></a>
         </div>
-    </div>
+    </section>
 
 <!-- Porfolio -->
-    <div id="portfolio-wrapper">
-        <h2>Portfolio <hr></h2>
+    <section id="portfolio-wrapper">
+        <h2>Portfolio<hr></h2>
         <!-- Card #1-->
-        <!-- Card #2-->
-        <!-- Card #3-->
+         <div class="card">
+            <h3>Up Saver Display</h2>
+            <img src="./images/projects/up-saver-home.png" alt="Project with Up bank account" class="portfolio-img">
+            <div class="card-info">
+                <p class="card-date">Jan 22, 2025</p>
+                <p>I used the Up Banking API to create a personal display for my own saving account. I used Vite + React, node.js + express.js, Up Bank API and Ngrok. I learnt the ins and outs of webhooks but opted for server-sent events.</p>
+            </div>
+                <button class="button">Github</button> 
+                <button class="button">Demo</button>
+         </div>
+         <!-- Card #2-->
+         <div class="card">
+            <h3>FoodbyNathan</h2>
+            <img src="./images/projects/recipe-blog-home.png" alt="Food blog project" class="portfolio-img">
+            <div class="card-info">
+                <p class="card-date">Mar 20, 2024</p>
+                <p>My first venture into the world of Next.js, Google Authentication, MongoDB and Tailwindcss. I created this blog to share my love for cooking and to document delicious recipes for fellow food enthusiasts.</p>
+            </div>
+                <button class="button">Github</button> 
+                <button class="button">Demo</button>
+         </div>
+         <!-- Card #3-->
+    </section>
        
 <!-- Contact -->
     <!-- Curved blob background -->
-    <div class="contact-wrapper">
-        <h2>Contact <br> Information</h2>
-        <h4>Nathan Jenkins</h6>
+    <section id="contact-wrapper">
+        <h2 class="contact-title">Contact <br> Information</h2>
+        <p class="contact-subheading">Nathan Jenkins</p>
         <div class="social-links">
             <a href="https://www.instagram.com/nathanxjenkins?igsh=MWY0Zm9mZTV0MTVlbA%3D%3D&utm_source=qr"><img src="./images/icons/instagram-icon.png" alt="Instagram logo" class="social-media-icons"></a>
             <a href="https://github.com/njenkins2727"><img src="./images/icons/github-icon.png" alt="Instagram logo" class="social-media-icons"></a>
             <a href="https://www.linkedin.com/in/nathan-jenkins-17798b236/"><img src="./images/icons/linkedin-icon.png" alt="Instagram logo" class="social-media-icons"></a>
         </div>
-        <h5>BASED IN</h5>
-            <p>Perth, 6000 <br> Western Australia </p>
-        <h5>EMAIL</h5>
-            <p>njenkins2727@gmail.com</p>
-        <h5>PHONE</h5>
-            <p>0459314653</p>
+        <div class="contact-info">
+            <h5>BASED IN</h5>
+                <p>Perth, 6000 <br> Western Australia </p>
+        </div>
+        <div class="contact-info">
+            <h5>EMAIL</h5>
+                <p>njenkins2727@gmail.com</p>
+        </div>
+        <div class="contact-info">
+            <h5>PHONE</h5>
+                <p>0459314653</p>
+        </div>
         <button class="button small-hide">GET IN TOUCH</button>
-    </div>
-    
-</div>
+    </section>
 </body>
 </html>
