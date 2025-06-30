@@ -93,7 +93,18 @@ h2{
     border: solid, 1px;
     font-size: 2rem;
     padding: 10px;
-    margin-top: 1rem;
+    width: auto;
+}
+
+.button-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.button-display button{
+    width: 100%;
+    margin: 0 10px 0 10px;
 }
 
 .button:hover{
@@ -139,7 +150,7 @@ h2{
 /* About */
 #about-wrapper{
     height: auto;
-    margin: 0 3rem 5rem 3rem;
+    margin: 0 3rem 0 3rem;
 }
 
 .about-paragraph{
@@ -152,7 +163,7 @@ h2{
 
 #portfolio-wrapper{
     min-height: 100vh;
-    margin: 0 3rem 0 3rem
+    margin: 3rem 3rem 0 3rem
 }
 
 .portfolio-img{
@@ -209,6 +220,11 @@ h2{
     line-height: 3rem;
 }
 
+.contact-button{
+    width: 20rem;
+    margin-top: 3rem;
+}
+
 /* blob */
 
 .svg-blob{
@@ -222,7 +238,6 @@ h2{
     z-index: -1;
 }   
 
-/* small devices (phones, 600px and down) */
 @media only screen and (min-width: 600px) {
     #contact-wrapper{
         margin-left: 10%;
@@ -237,15 +252,6 @@ h2{
     }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 992px) {
-    /* On large screen hide item */
-    .large-hide{
-        display: none;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
     /* On small screen hide item */
     .small-hide{
@@ -302,7 +308,119 @@ h2{
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1064px) {
+    /* make title-name smaller  */
+}
 
+@media only screen and (min-width: 992px) {
+    /* On large screen hide item */
+    .large-hide{
+        display: none;
+    }
+    
+    /* Headshot */
+    #image-wrapper{
+        border-radius: 0;
+        border: 0;
+        margin: 0;
+        max-height: 55vh;
+        min-width: 30vw;
+    }
+    
+    /* Title */
+    #title-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        font-size: 0.5rem;
+        background-color: var(--color-orange);
+        min-height: 45vh;
+        overflow: hidden;
+        padding-top: 0;
+    }
+    
+    .title-name{
+        font-size: 3.1rem;
+    }
+    
+    .title-subheading{
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    /* Wrappers */
+    .home-wrapper-lg{
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .left-column{
+        width: 40vw;
+    }
+    
+    /* .left-column h1{
+        font-size: 3.25rem;
+    }
+     */
+
+     #portfolio-wrapper{
+        min-height: 100vh;
+        margin: 3rem 10rem 3rem 10rem
+    }
+     
+    /* About */
+    #about-wrapper{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .social-links-about{
+        display: block;
+        margin-left: auto;
+        margin-top: 4rem;
+    }
+
+    .social-links-about a{
+        margin-right: 2.5em;
+    }
+
+}
+
+@media only screen and (min-width: 1440px) {
+     /* Headshot */
+    #image-wrapper{
+        max-height: 55vh;
+        min-width: 30vw;
+    }
+
+    /* Title */
+    #title-wrapper{
+        min-height: 45vh;
+        
+    }
+
+    #portfolio-wrapper{
+    min-height: 100vh;
+    margin: 3rem 15rem 0 15rem
+    }
+
+     #about-wrapper{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left-column{
+        height: 100vh;
+        width: 30vw;
+    }
+
+     .home-wrapper-lg{
+        overflow: hidden;
+    }
 }
