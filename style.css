@@ -308,10 +308,6 @@ h2{
     }
 }
 
-@media only screen and (max-width: 1064px) {
-    /* make title-name smaller  */
-}
-
 @media only screen and (min-width: 992px) {
     /* On large screen hide item */
     .large-hide{
@@ -322,9 +318,7 @@ h2{
     #image-wrapper{
         border-radius: 0;
         border: 0;
-        margin: 0;
-        max-height: 55vh;
-        min-width: 30vw;
+        margin: 0;        
     }
     
     /* Title */
@@ -335,7 +329,6 @@ h2{
         align-items: center;  
         font-size: 0.5rem;
         background-color: var(--color-orange);
-        min-height: 45vh;
         overflow: hidden;
         padding-top: 0;
     }
@@ -358,12 +351,8 @@ h2{
     
     .left-column{
         width: 40vw;
+        height: 100vh;
     }
-    
-    /* .left-column h1{
-        font-size: 3.25rem;
-    }
-     */
 
      #portfolio-wrapper{
         min-height: 100vh;
@@ -390,7 +379,10 @@ h2{
 
 }
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1064px) {
+}
+
+@media only screen and (min-width: 1296px) {
      /* Headshot */
     #image-wrapper{
         max-height: 55vh;
@@ -400,12 +392,11 @@ h2{
     /* Title */
     #title-wrapper{
         min-height: 45vh;
-        
     }
 
     #portfolio-wrapper{
-    min-height: 100vh;
-    margin: 3rem 15rem 0 15rem
+        min-height: 100vh;
+        margin: 3rem 15rem 0 15rem
     }
 
      #about-wrapper{
