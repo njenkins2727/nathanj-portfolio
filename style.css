@@ -40,8 +40,6 @@ h2{
 /* Image Headshot */
 #image-wrapper{
   position: relative;
-  /* max-width: 80vw; */
-  /* max-width: 18rem; */
   max-width: clamp(18rem, 80vw, 30rem);
   aspect-ratio: 1 / 1;
   border-radius: 50%;
@@ -90,7 +88,7 @@ h2{
     background-color: transparent;
     outline: none;
     cursor: pointer;
-    border: solid, 1px;
+    border: solid 1px;
     font-size: 2rem;
     padding: 10px;
     width: auto;
@@ -326,6 +324,10 @@ h2{
         border: 0;
         margin: 0;        
     }
+
+    #image-wrapper:hover {
+        transform: scale(1);
+    }
     
     /* Title */
     #title-wrapper{
@@ -382,9 +384,13 @@ h2{
         margin-right: 2.5em;
     }
 
-}
+    .svg-blob{
+        right: -40%;
+        bottom: -30%;
+        width: 150%;
+        max-width: 1250px;
+    }
 
-@media only screen and (min-width: 1064px) {
 }
 
 @media only screen and (min-width: 1296px) {
@@ -419,4 +425,53 @@ h2{
      .home-wrapper-lg{
         overflow: hidden;
     }
+
+    /* contact desktop layout */
+    /* Contact */
+
+#contact-wrapper{
+    height: 100vh;
+    width: 100vw;
+    margin-left: 0;    
+    display: block;
+    position: relative;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
+
+.contact-title{
+    font-size: 5rem;
+}
+
+.contact-info{
+    font-size: 1.8rem;
+}
+
+.contact-button{
+    height: 4rem;
+}
+
+.desktop-contact-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem 8rem 0 8rem;
+}
+
+.desktop-contact-info{
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 4rem 4rem;
+}
+
+.svg-blob{
+        right: -20%;
+        bottom: -50%;
+        width: 150%;
+        max-width: 1500px;
+    }
+}
+    

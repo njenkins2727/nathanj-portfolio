@@ -37,7 +37,7 @@
     <section id="title-wrapper"> 
         <h1 class="title-name">Nathan Jenkins</h1>
         <h3 class="title-subheading">Full-stack Web Developer</h3>
-        <button class="button small-hide">Contact</button>
+        <a href="#contact-wrapper"><button class="button small-hide">Contact</button></a>
         <div class="social-links large-hide social-links-title">
             <a href="https://www.instagram.com/nathanxjenkins?igsh=MWY0Zm9mZTV0MTVlbA%3D%3D&utm_source=qr"><img src="./images/icons/instagram-icon.png" alt="Instagram logo" class="social-media-icons"></a>
             <a href="https://github.com/njenkins2727"><img src="./images/icons/github-icon.png" alt="Instagram logo" class="social-media-icons"></a>
@@ -53,7 +53,7 @@
         Outside of coding, I enjoy bouldering, boxing, music, and food! These activities keep me curious, focused, and energized both in and out of the tech space.</p>
         <div>
             <button class="button">Resume</button>
-            <button class="button small-hide">Portfolio</button>
+            <a href="#portfolio-wrapper"><button class="button small-hide">Portfolio</button></a>
         </div>
         <div class="social-links social-links-about small-hide">
             <a href="https://www.instagram.com/nathanxjenkins?igsh=MWY0Zm9mZTV0MTVlbA%3D%3D&utm_source=qr"><img src="./images/icons/instagram-icon.png" alt="Instagram logo" class="social-media-icons"></a>
@@ -71,11 +71,11 @@
             <img src="./images/projects/up-saver-home.png" alt="Project with Up bank account" class="portfolio-img">
             <div class="card-info">
                 <p class="card-date">Jan 22, 2025</p>
-                <p>I used the Up Banking API to create a personal display for my own saving account. I used Vite + React, node.js + express.js, Up Bank API and Ngrok. I learnt the ins and outs of webhooks but opted for server-sent events.</p>
+                <p>I used the Up Bank API to create a real-time animated display for one of my savers account. I learnt all about webhooks and was able to work on and reinforce my backend knowledge. I used Vite + React, node.js + express.js, Up Bank API and Ngrok.</p>
             </div>
             <div class="button-display">
-                <button class="button">Github</button> 
-                <button class="button">Demo</button>
+                <button class="button" onclick="widnow.location.href='https://github.com/njenkins2727/up-saver-display'">Github</button> 
+                <button class="button" onclick="widnow.location.href='https://myupsaver.onrender.com/'">Demo</button></a> 
             </div>
          </div>
          <!-- Card #2-->
@@ -84,11 +84,11 @@
             <img src="./images/projects/recipe-blog-home.png" alt="Food blog project" class="portfolio-img">
             <div class="card-info">
                 <p class="card-date">Mar 20, 2024</p>
-                <p>My first venture into the world of Next.js, Google Authentication, MongoDB and Tailwindcss. I created this blog to share my love for cooking and to document delicious recipes for fellow food enthusiasts.</p>
+                <p>I created this blog to share my love for cooking and to document delicious recipes for my girlfriend to follow. This was my first venture into the world of Next.js, Google Authentication, MongoDB and Tailwindcss. There were challenges, but each hurdle was an opportunity to grow and learn.</p>
             </div>
             <div class="button-display">
-                <button class="button">Github</button> 
-                <button class="button">Demo</button>
+                <button class="button" onclick="window.location.href='https://github.com/njenkins2727/recipe-blog-next'">Github</button>
+                <button class="button">Demo</button> 
             </div>
          </div>
          <!-- Card #3-->
@@ -100,27 +100,32 @@
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="svg-blob">
           <path fill="#606C38" d="M45.3,-65.5C56.6,-63.3,62.1,-47.1,56.9,-33.4C51.7,-19.6,35.8,-8.4,28.5,0.2C21.2,8.8,22.4,14.6,21.5,22.1C20.5,29.6,17.2,38.6,11.6,40.9C6,43.1,-2,38.6,-16.7,41.4C-31.4,44.1,-52.8,54.2,-63.4,50.3C-74,46.4,-73.8,28.5,-73.4,12.3C-72.9,-3.9,-72.3,-18.3,-61.8,-22.8C-51.3,-27.4,-31,-22,-19.1,-23.8C-7.1,-25.7,-3.6,-34.8,6.7,-45.3C17,-55.8,34.1,-67.7,45.3,-65.5Z" transform="translate(100 100)" />
         </svg>
-
+    <div class="desktop-contact-header">
         <h2 class="contact-title">Contact <br> Information</h2>
+    <div class="contact-name-social-wrapper">
         <p class="contact-subheading">Nathan Jenkins</p>
         <div class="social-links">
             <a href="https://www.instagram.com/nathanxjenkins?igsh=MWY0Zm9mZTV0MTVlbA%3D%3D&utm_source=qr"><img src="./images/icons/instagram-icon.png" alt="Instagram logo" class="social-media-icons"></a>
             <a href="https://github.com/njenkins2727"><img src="./images/icons/github-icon.png" alt="Instagram logo" class="social-media-icons"></a>
             <a href="https://www.linkedin.com/in/nathan-jenkins-17798b236/"><img src="./images/icons/linkedin-icon.png" alt="Instagram logo" class="social-media-icons"></a>
         </div>
-        <div class="contact-info">
-            <h5>BASED IN</h5>
+    </div>
+    </div>
+    <div class="desktop-contact-info">
+            <div class="contact-info">
+                <h5>BASED IN</h5>
                 <p>Perth, 6000 <br> Western Australia </p>
-        </div>
-        <div class="contact-info">
-            <h5>EMAIL</h5>
+            </div>
+            <div class="contact-info">
+                <h5>EMAIL</h5>
                 <p>njenkins2727@gmail.com</p>
-        </div>
-        <div class="contact-info">
-            <h5>PHONE</h5>
+            </div>
+            <div class="contact-info">
+                <h5>PHONE</h5>
                 <p>0459314653</p>
-        </div>
-        <button class="button small-hide contact-button">GET IN TOUCH</button>
-    </section>
+            </div>
+            <button class="button small-hide contact-button" onclick="window.location.href='mailto:njenkins2727@gmail.com'">GET IN TOUCH</button> 
+    </div>
+        </section>
 </body>
 </html>
